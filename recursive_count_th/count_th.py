@@ -9,15 +9,15 @@ def count_th(word):
 
     # get word len
     length = len(word)
-    # if word is too small to find "th"
+    # if word is too small to find 'th'
     if length < 2:
         # save count
         count = cache['count']
-        # empty cache
+        #empty the cache
         cache['count'] = 0
         return count
 
-    # find th
+    # find 'th'
     search = 'th'
     if word[length-2:length] == search:
         # update count
